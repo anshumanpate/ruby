@@ -217,3 +217,6 @@ a = {"x" => 45, "y" => 67}
 # p a
 
 
+#   has.values 
+
+# p a.values    return values of array in array

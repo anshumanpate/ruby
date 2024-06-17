@@ -484,3 +484,8 @@
 
 
 # Arrays
+
+
+# 22. Hashes Basics
+
+
