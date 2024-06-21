@@ -85,17 +85,13 @@
 
 # One of the differences is how you create them.
 
-t = Proc.new { |x,y| puts "I don't care about arguments!" }
-t.call
-# "I don't care about arguments!"
+# t = Proc.new { |x,y| puts "I don't care about arguments!" }
+# t.call
+# # "I don't care about arguments!"
 
 
-a= Proc.new{|x,y| puts "hello"}
- a.call
-
-
-
-
+# a= Proc.new{|x,y| puts "hello"}
+#  a.call
 
 
 #  Lambdas are defined with -> {} and procs with Proc.new {}.

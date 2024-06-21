@@ -73,5 +73,111 @@
 # 6.  Define a lambda that converts a temperature from Celsius to Fahrenheit.
 
 
-temp = -> (n) {(n * 9/5) + 32}
- puts temp.call(23)
+# temp = -> (n) {(n * 9/5) + 32}
+#  puts temp.call(23)
+
+
+# a ={"h" =>2}
+# b = {"h"=>2}
+# puts a <=> b
+
+
+
+# Write a Ruby method that takes a block and prints "Hello from the block!" when the block is called.
+
+
+
+#  def greet 
+#     yield
+#  end
+
+#  greet{puts "Hello from the block!"}
+
+
+# Write a method that takes a block which accepts one argument. Pass the string "Ruby" to the block and print the result inside the method.
+
+
+
+
+#  def greet 
+#     yield "Ruby"
+
+#  end
+
+#  greet{|x| puts x}
+
+
+# Write a method that yields to a block three times. Each time, pass a different string to the block: "First", "Second", "Third".
+
+
+#  def greet 
+#     yield "first"
+#     yield "second"
+#     yield "third"
+
+
+#  end
+
+#  greet{|x| puts x}
+
+
+# Create a proc that takes one argument and returns its square. Call the proc with the number 5 and print the result.
+
+# sqr = Proc.new{|x| puts x*x}
+# sqr.call(5)
+
+
+# Write a method that takes a proc as an argument and calls it with the number 10. Create a proc that doubles its input and pass it to the method.
+
+
+#  def hello(a)
+#     a.call(10)
+#  end
+
+#  double=Proc.new{|x| x*2}
+
+#  p hello(double)
+
+
+# Create a lambda that takes one argument and returns its cube. Call the lambda with the number 3 and print the result.
+
+
+# cube = -> (x){x**3}
+
+# p cube.call(3)
+
+
+# Write a method that takes a lambda as an argument and calls it with the number 7. Create a lambda that triples its input and pass it to the method.
+
+
+#  def triple(a)
+#     a.call(7)
+
+#  end
+
+#  numbertriple= ->(x){x*3}
+
+#  p triple(numbertriple)
+
+
+
+
+
+# def hello(&a)
+#     a.to_proc.call(4)
+
+#     end
+
+#     r=hello{|x|x*3}
+#     puts r
+
+# # Write a method that takes a proc and uses yield to call it with the number 2. Test the method with a proc that doubles its input.
+
+#   def hello
+#     yield(2)
+#   end
+
+#   a=Proc.new{|x| x*2}
+
+#   r= hello(&a)
+#   puts r

@@ -1,3 +1,6 @@
+
+
+
 # Keywords or Reserved words are the words in a language that are used for some internal process or represent some predefined actions. These words are therefore not allowed to use as variable names or objects or as constants. Doing this may result in compile-time error.
 
 
@@ -355,14 +358,20 @@
 # In Ruby, next statement is used to jump to the next iterator of given loop. The next statement is identical to continue statement in C and Java language. When the next statement is used no other iteration will be performed. Generally, the next statement is used in for and while loop.
 
 #  a= 0 
-#   while a < 10
-#      if a==5 then
-#          next
-#      end
-#      puts a
+#   while a <= 10
+#      if a==5
 
-#      a+=1
-#     end 
+#         a+=1
+
+#          next
+
+     
+
+    #  end
+    #  puts a
+
+    #  a+=1
+    # end 
 
 
 # a = 0
@@ -488,4 +497,19 @@
 
 # 22. Hashes Basics
 
+
+
+# a = {"name" =>"anshuman" , "age"=>22}
+
+# p a["name"]
+
+# p a[:name]
+
+
+
+
+# require 'active_support/core_ext/hash/indifferent_access'
+# b = {"name" =>"anshuman" , "age"=>22 }.with_indifferent_access
+# p b["name"]
+# p b[:name]
 
